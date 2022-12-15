@@ -1,6 +1,7 @@
 body {
     background: #dddddd;
     margin: 24px;
+    font-family: sans-serif;
 }
 
 a {
@@ -8,7 +9,7 @@ a {
     display: flex;
 }
 
-.timer {
+.timer, .TM-4 {
     font-family: sans-serif;
     display: inline-block;
     padding: 24px 32px;
@@ -16,12 +17,12 @@ a {
     background: white;
 }
 
-.timer__part {
+.timer__part, .TM-4__part {
     font-size: 36px;
     font-weight: bold;
 }
 
-.timer__btn {
+.timer__btn, .TM-4__btn {
     width: 50px;
     height: 50px;
     margin-left: 16px;
@@ -32,11 +33,11 @@ a {
     cursor: pointer;
 }
 
-.timer__btn--start {
+.timer__btn--start, .TM-4__btn--start {
     background: #00b84c;
 }
 
-.timer__btn--stop {
+.timer__btn--stop, .TM-4__btn--stop {
     background: #ff0256;
 }
 
