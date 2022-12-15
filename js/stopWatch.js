@@ -1,6 +1,6 @@
 class StopWatch {
     constructor(root) {
-        root.innerHTML = TM4.getHTML();
+        root.innerHTML = StopWatch.getHTML();
 
         this.el = {
             minutes: root.querySelector(".TM-4__part--minutes"),
