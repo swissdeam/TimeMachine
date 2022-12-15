@@ -3,6 +3,11 @@ body {
     margin: 24px;
 }
 
+a {
+    text-decoration: none;
+    display: flex;
+}
+
 .timer, .TM-4 {
     font-family: sans-serif;
     display: inline-block;
@@ -34,10 +39,7 @@ body {
 .timer__btn--stop, .TM-4__btn--stop {
     background: #ff0256;
 }
-body
-{
-    background-color: #404040;
-}
+
 
 .clockpage
 {
