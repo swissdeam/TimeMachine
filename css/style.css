@@ -62,3 +62,9 @@ a {
     font-weight: normal;
     font-size: 18px;
 }
+.green{
+    background: green;
+}
+.red{
+    background: red;
+}
