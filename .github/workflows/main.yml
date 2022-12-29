@@ -1,6 +1,5 @@
 # название
 name: Project test & build
-
 # целевые события для запуска
 # в данном случае это push и pull_request, в ветку main
 on:
@@ -13,6 +12,7 @@ on:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
+
     
     # запускаются по шагам
     # name - название шага
@@ -26,6 +26,9 @@ jobs:
       - name: Install 🔧
         run: npm install
 
+      - name: Premission
+        run: chmod 0777 ./node_modules/.bin/mocha
+        
       - name: Run Test 🔨
         run: npm run test
 
