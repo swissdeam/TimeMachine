@@ -54,3 +54,5 @@ setInterval(()=>{
             alert("Сработал будильник в " + item);
     });
 },60000);
+
+module.exports = { checkTime }

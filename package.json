@@ -1,0 +1,22 @@
+{
+  "name": "times2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/swissdeam/TimeMachine.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/swissdeam/TimeMachine/issues"
+  },
+  "homepage": "https://github.com/swissdeam/TimeMachine#readme",
+  "devDependencies": {
+    "mocha": "^10.2.0"
+  }
+}
