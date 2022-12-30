@@ -1,4 +1,17 @@
+/**
+ * @file скрипт для страницы с будильниками
+ * @author Evgenii Reshetnikov
+ */
+
+/**
+ * @description переменная alarms, массив будильников
+ */
 var alarms=[];
+
+
+/**
+ * @description printAlarm() function places layout of alarm on the page
+ */
 function printAlarm(){
     
     let inner="";
@@ -31,13 +44,22 @@ $( document ).ready(function() {
     });
 });
 
+
+//
+/**
+ * @description checkTime() add "0" to each number of time for special time-format
+ * @param (string) i-время.
+ */
 function checkTime(i) {
     if (i < 10) {
       i = "0" + i;
     }
     return i;
   }
-  
+
+/**
+ * @description getCurrentTime() takes minute and hour from system and places them into time-format
+ */
   function getCurrentTime() {
     var today = new Date();
     var h = today.getHours();
@@ -47,8 +69,11 @@ function checkTime(i) {
     m = checkTime(m);
     return h + ":" + m;
   }
-  
-setInterval(()=>{
+
+/**
+ * @description setInterval check each alarm if its time is equal current time
+ */
+    setInterval(()=>{
     alarms.forEach((item)=>{
         if(getCurrentTime() == item.time && item.isEnable == 1)
             alert("Сработал будильник в " + item);
