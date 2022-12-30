@@ -1,5 +1,5 @@
-const alarm = require('../src/app.js')
-const calc = require('../src/app.js')
+const alarm = require('../src/js/hey.js')
+const calc = require('../src/js/calcTest.js')
 const assert = require('assert')
 it('checkTime function test', () => {
     assert.equal(alarm.checkTime('11'), 11)
