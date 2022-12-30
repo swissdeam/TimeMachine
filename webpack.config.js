@@ -5,7 +5,6 @@ module.exports = {
     entry: './src/app.js',
     output: {
         filename: 'bundle.[chunk-hash].js',
-        path: path.resolve(__dirname, 'public')
     },
     devServer: {
         port: 3000
